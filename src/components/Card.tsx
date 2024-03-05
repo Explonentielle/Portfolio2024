@@ -1,7 +1,7 @@
 "use client";
 
 // import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { CardBody, CardContainer, CardItem } from "./3d-card";
 import { MousePointerSquare } from 'lucide-react';
 import { useHeaderContext } from '../Context';
@@ -9,7 +9,7 @@ import { projectsData } from '../lib/data'
 
 
 export default function Card({ src, title, link, techno }) {
-    const { isOpen, openModal, setModalContent, modalContent } = useHeaderContext();
+    const { isOpen, openModal, setModalContent } = useHeaderContext();
 
     const open = (title) => {
         updateModalContent(title)

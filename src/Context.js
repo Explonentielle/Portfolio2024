@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import 'intersection-observer';
-import { projectsData } from './lib/data'
 
 const HeaderContext = createContext();
 
