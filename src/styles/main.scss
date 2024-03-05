@@ -1,0 +1,82 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "reset";
+@import "header";
+@import "footer";
+@import "skills";
+@import "scrollBar";
+@import "about";
+@import "projects";
+
+.fixed {
+    position: fixed;
+    width: 100vw;
+    height: 200vh;
+    top: 0;
+    left: 0;
+}
+
+.innerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media only screen and (max-width: 1024px) {
+        padding: 4rem !important;
+    }
+
+    .heroBaner {
+        h1 {
+            p {
+                color: transparent;
+                -webkit-text-stroke: 2px rgb(255, 255, 255);
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            padding: 3rem !important;
+            margin-bottom: 8rem;
+        }
+
+        .links {
+            li {
+                background: rgb(89, 102, 185, 0.6);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease-in-out;
+
+                a {
+                    align-items: center;
+                }
+
+                .svg-icon {
+                    fill: white;
+                }
+            }
+
+            li:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.hfull {
+
+    @media only screen and (max-width: 1300px) {
+        width: 200vw !important;
+        height: 200vw !important;
+    }
+
+    @media only screen and (max-width: 426px) {
+        width: 250vw !important;
+        height: 800vw !important;
+    }
+
+}
+
+
+.hidden {
+    opacity: 0 !important;
+    transition: opacity 0.3s ease-in-out;
+}

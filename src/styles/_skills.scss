@@ -1,0 +1,96 @@
+.stack {
+    justify-content: center;
+
+    .skills {
+        justify-content: center;
+
+        .skill {
+            align-items: center;
+            justify-content: center;
+            min-width: 30%;
+            max-height: 30%;
+            flex-basis: 30%;
+            background: rgb(52, 59, 102, 0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+
+            @media only screen and (max-width: 1440px) {
+                min-width: 25%;
+                flex-basis: 25%;
+            }
+
+            .skillImg {
+                width: 20%;
+            }
+
+            .text-blue {
+                color: rgb(124, 184, 219);
+            }
+
+            .text-pink {
+                color: rgb(238, 153, 234);
+            }
+
+            .text-green {
+                color: rgb(154, 228, 193);
+            }
+        }
+
+        .skill:hover {
+            background: rgb(52, 59, 102, 0.9);
+        }
+    }
+}
+
+.vertical-text {
+    margin-top: 3rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    height: 33%;
+}
+
+.svg-React {
+    fill: #52b9e9;
+}
+
+.svg-Node {
+    fill: #52e98c;
+}
+
+.svg-Github {
+    fill: rgb(0, 0, 0);
+}
+
+.svg-Three {
+    fill: rgb(124, 121, 121);
+}
+.svg-Tailwind {
+    fill: rgb(68, 168, 179);
+}
+
+
+.skillsTitle {
+    width: fit-content;
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.skillsTitle::before {
+    content: "";
+    height: 50%;
+    width: 110%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    transition: all .3s ease;
+    background: linear-gradient(180deg, transparent 50%, rgb(89, 102, 185) 50%);
+    bottom: 0;
+    left: 0;
+}
+
+.skillsTitle:hover::before {
+    height: 100%;
+}

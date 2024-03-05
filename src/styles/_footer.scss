@@ -1,0 +1,66 @@
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    .canvaContainer {
+        width: 40vw;
+        display: flex;
+
+        a {
+            cursor: pointer;
+            z-index: 3;
+            width: 5vw;
+        }
+
+    }
+
+    .contact__link {
+        z-index: 3;
+        margin-left: 3rem;
+    }
+
+    .footerCopy {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        padding-right: 4rem;
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 769px) {
+    .canvaContainer {
+        a {
+            cursor: pointer;
+            width: 15vw !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .footerCopy {
+        width: 30vw;
+        padding: 0 1rem 6rem 0 !important;
+
+        h2 {
+            font-size: 1.8rem !important;
+        }
+
+        p {
+            font-size: 1.4rem !important;
+        }
+    }
+}

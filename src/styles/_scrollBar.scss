@@ -1,0 +1,63 @@
+.scrollDowncontainer {
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 1024px) {
+       opacity: 0;
+    }
+
+
+    .scrollDown {
+        height: 5vh;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 4vw;
+        color: rgb(255, 255, 255);
+        opacity: 0.8;
+        animation: scrollAnimation 1s infinite;
+
+        .lastChild {
+            transform: translateY(-80%);
+        }
+
+        .svgContainer {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .svgContainer:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.scrollDown {
+    animation: scrollAnimation 1s infinite linear;
+}
+
+.hidden {
+    opacity: 0 !important;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
