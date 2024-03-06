@@ -2,11 +2,44 @@
     background-color: rgb(167, 171, 200, 1);
     transition: background-color 0.3s ease;
 }
+.bg-submi{
+  background-color: rgb(167, 171, 200, 0.8);
+}
+.bg-sub{
+  background-color: rgb(52, 59, 102, 0.7);;
+}
+
 
 .bg-submit:hover {
   background-color: rgb(129, 132, 160);
 }
 
+.aboutTitle {
+  width: fit-content;
+  z-index: 5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.aboutTitle::before {
+  content: "";
+  height: 50%;
+  width: 110%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s ease;
+  background: linear-gradient(180deg, transparent 50%, rgb(89, 102, 185) 50%);
+  bottom: 0;
+  left: 0;
+}
+
+.aboutTitle:hover::before {
+  height: 100%;
+}
+
 .hours-font{
-    color: rgb(89, 102, 185);;
+  color: rgb(89, 102, 185);;
 }

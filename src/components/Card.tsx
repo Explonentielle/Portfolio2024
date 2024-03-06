@@ -57,7 +57,7 @@ export default function Card({ src, title, link, techno }) {
                     className="ml-2 font-bold text-neutral-500 text-s max-w-sm mt-2 text-white dark:text-neutral-300"
                 >
                     <div className="flex cursor" onClick={() => open(title)}>
-                        en Savoir plus
+                        Read more
                         <MousePointerSquare />
                     </div>
                 </CardItem>

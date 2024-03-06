@@ -1,6 +1,7 @@
 
 .bg-card {
-    background-color: rgb(167, 171, 200, 0.7);
+    background-color: rgb(52, 59, 102, 0.7);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 .bg-button {
@@ -13,7 +14,7 @@
 
 .titleCard {
     color: transparent;
-    -webkit-text-stroke: 1.5px rgb(89, 102, 185);
+    -webkit-text-stroke: .5px rgb(252, 252, 252);
 }
 
 .cardButton {
@@ -74,7 +75,7 @@
         position: absolute;
         z-index: -1;
         transition: all .3s ease;
-        background: linear-gradient(180deg, transparent 50%, rgb(255, 255, 255, 0.5) 50%);
+        background: linear-gradient(180deg, transparent 50%, rgba(255, 255, 255, 0.3) 50%);
         bottom: 0;
         left: 0;
     }

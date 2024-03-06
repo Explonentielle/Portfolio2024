@@ -15,7 +15,7 @@
     "antd": "^5.14.1",
     "autoprefixer": "^10.4.17",
     "clsx": "^2.1.0",
-    "framer-motion": "^11.0.6",
+    "framer-motion": "^11.0.8",
     "intersection-observer": "^0.12.2",
     "lucide-react": "^0.343.0",
     "postcss": "^8.4.35",

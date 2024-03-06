@@ -80,3 +80,77 @@
     opacity: 0 !important;
     transition: opacity 0.3s ease-in-out;
 }
+
+
+.referral{
+    transform: translateX(140%) !important;
+}
+.referral-container {
+    position: fixed;
+    right: 5vw;
+    bottom: -20%;
+    transform: translateY(-50%);
+    z-index: 5;
+    padding: 2rem;
+    width: 90vw;
+
+    @media only screen and (max-width: 1024px) {
+        bottom: -10% !important;
+    }
+}
+
+.buttonPos {
+    position: absolute;
+    right:-1vw !important;
+    top: 25% !important;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 125vw;
+    top: -25%;
+    background-color: rgb(167, 171, 200, 0.7);
+    height: 50%;
+
+    p{
+        margin-top: 2rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: 900;
+        writing-mode:vertical-rl;
+        text-orientation:sideways;
+        text-transform: uppercase ;
+    }
+}
+
+.chevron-icon {
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.rotate-icon {
+    transform: rotate(-180deg);
+}
+
+.referral-content {
+    transition: transform 0.3s ease;
+    background-color: rgb(52, 59, 102);
+    transform: translateX(150%);
+}
+
+.referral-content.show {
+    transform: translateX(0%);
+}
+
+.space-y-4 > * {
+    margin-bottom: 16px;
+}
+
+.hours-font {
+    color: #ffffff;
+}
