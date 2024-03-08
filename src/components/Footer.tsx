@@ -15,8 +15,6 @@ const Footer = () => {
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
     
-    // Si la somme de la hauteur de la fenêtre et de la position de défilement est égale à la hauteur totale du document
-    // On est en bas de la page
     if (windowHeight + scrollTop === documentHeight) {
       setShowFooter(true);
     } else {
@@ -29,7 +27,7 @@ const Footer = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Le tableau vide indique que ce useEffect s'exécute une seule fois après le rendu initial
+  }, []);
 
   return (
     <div className='footer' style={{ opacity: showFooter ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}>
