@@ -21,7 +21,7 @@ const Container = () => {
                 <div className='links mt-10'>
                     <ul className='flex'>
                         {socials.map((social, index) => (
-                            <SocialIcons social={social} index={index} />
+                            <SocialIcons key={index} social={social} index={index} />
                         ))}
                     </ul>
                 </div>

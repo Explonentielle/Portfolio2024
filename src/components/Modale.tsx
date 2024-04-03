@@ -1,10 +1,10 @@
 import React from "react";
 import { useHeaderContext } from '../Context';
 import { MousePointerSquare } from 'lucide-react';
+import { Button } from "./ui/button";
 
 export default function Modal() {
     const { isOpen, closeModal, modalContent } = useHeaderContext();
-    console.log(modalContent.linkBis)
 
     if (!isOpen) return null;
 
@@ -12,9 +12,9 @@ export default function Modal() {
         <div className="modalFixed w-full top-0 left-0 p-2">
             <div className="relative flex w-auto h-full flex-col bg-gray-800 rounded-lg bg-opacity-95">
                 <div className=" absolute top-10 right-10 p-2 rounded-lg">
-                    <button className="px-4 py-2 bg-gray-400 bg-opacity-95 text-xl text-white font-bold rounded-lg" onClick={closeModal}>
+                    <Button className="px-4 py-2 bg-gray-400 bg-opacity-95 text-xl text-white font-bold rounded-lg" onClick={closeModal}>
                         Close
-                    </button>
+                    </Button>
                 </div>
                 <div className="p-32 innerCont">
                     <div>
@@ -53,11 +53,6 @@ export default function Modal() {
                                    <a href={modalContent.linkBis} target="_blank" rel="noopener noreferrer" className="block mt-4 hover:underline text-white font-bold flex rounded-xl bg-gray-400 p-2 bg-opacity-95 ">
                                             Check the project <MousePointerSquare />
                                         </a>
-                                    {/* {modalContent.linkBis && (
-                                        <a href={modalContent.link} target="_blank" rel="noopener noreferrer" className="block mt-4 hover:underline text-white font-bold flex rounded-xl bg-gray-400 p-2 bg-opacity-95">
-                                        Check source code <MousePointerSquare />
-                                    </a>
-                                    )} */}
                                 </div>
                             )}
 

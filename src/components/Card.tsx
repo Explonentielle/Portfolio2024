@@ -14,24 +14,24 @@ export default function Card({ src, title, link, techno }) {
     const open = (title) => {
         updateModalContent(title)
         openModal(!isOpen);
-        
+
     };
 
     const updateModalContent = (title) => {
         const selectedProject = projectsData.find(project => project.title === title);
-    
+
         if (selectedProject) {
-          setModalContent(prevModalContent => ({
-            ...prevModalContent,
-            title: selectedProject.title,
-            content: selectedProject.content,
-            src: selectedProject.src,
-            link: selectedProject.link,
-            linkBis: selectedProject.linkBis,
-            techno: selectedProject.techno,
-          }));
+            setModalContent(prevModalContent => ({
+                ...prevModalContent,
+                title: selectedProject.title,
+                content: selectedProject.content,
+                src: selectedProject.src,
+                link: selectedProject.link,
+                linkBis: selectedProject.linkBis,
+                techno: selectedProject.techno,
+            }));
         }
-      };
+    };
 
     return (
         <CardContainer className="cardContainer p-2 inter-var m-3">
@@ -44,8 +44,6 @@ export default function Card({ src, title, link, techno }) {
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
                     <img
-                        // height="1000"
-                        // width="1000"
                         className=" w-full h-60 object-cover rounded-xl group-hover/card:shadow-xl"
                         src={src}
                         alt="thumbnail"
@@ -63,12 +61,12 @@ export default function Card({ src, title, link, techno }) {
                 </CardItem>
                 <div className="flex flex-col justify-between items-center mt-4">
                     <div className="mb-4">
-                        {techno.map((item, index) => (
+                        {techno.slice(0, 4).map((item: string, index: number) => (
                             <CardItem
                                 key={index}
                                 translateZ={20}
                                 as="button"
-                                className=" cardButton px-4 py-2 m-2 rounded-xl bg-button dark:bg-white dark:text-black text-white font-bold"
+                                className="cardButton p-2 m-2 rounded-xl bg-button dark:bg-white dark:text-black text-white font-bold"
                             >
                                 {item}
                             </CardItem>

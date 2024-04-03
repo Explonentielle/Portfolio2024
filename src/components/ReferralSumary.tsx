@@ -30,7 +30,7 @@ const ReferralSumary = ({ comments, background }) => {
             ))}
             <span className="ml-2 text-xl font-bold hours-font">{averageRating.toFixed(1)}</span>
         </div>
-        <a className='text-white underline'>Read more</a>
+        <a href='/' className='text-white underline'>Read more</a>
     </div>
 </div>
   )

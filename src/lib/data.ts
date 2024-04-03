@@ -74,38 +74,54 @@ export const skills = [
 
 export const projectsData = [
     {
-        title: 'Thread',
+        title: 'MateFinder',
         content: {
-            description: "Thread+ is our project inspired by the famous Thread discussion application, but with a touch of innovation. Designed to offer a more immersive and enriched online discussion experience, Thread+ goes beyond simple messaging to introduce new features and an improved user interface.",
+            description: "MateFinder is a social platform designed to help people find their perfect activity mate. Whether you're into sports, arts, or cultural events, MateFinder connects like-minded individuals to participate in various activities together. With a user-friendly interface and advanced search features, MateFinder makes it easy to discover and join exciting activities in your area.",
             features: {
                 main: [
                     {
-                        title: "Reply System",
-                        description: "Respond specifically to messages for more targeted and structured discussions."
+                        title: "Activity Details",
+                        description: "Access detailed information about activities, including date, time, location, and any requirements. Get a comprehensive overview before deciding to participate."
                     },
                     {
-                        title: "Mentions and Notifications",
-                        description: "Mention users to involve them in the conversation and receive relevant notifications."
+                        title: "Activity Creation",
+                        description: "Create and share your own activities with the community. Whether it's a hiking trip, movie night, or cooking class, invite others to join your adventures."
                     },
                     {
-                        title: "Customizable Dark Mode",
-                        description: "Adjust the interface with different dark themes for a comfortable reading experience."
+                        title: "Candidate Applications",
+                        description: "Receive and manage applications from users interested in your activities. Review their profiles and decide who can join."
+                    },
+                    {
+                        title: "Reviews and Ratings",
+                        description: "Provide feedback and ratings after participating in an activity. Help others make informed decisions and build a trustworthy community."
+                    },
+                    {
+                        title: "Authentication Options",
+                        description: "Securely sign in to MateFinder using your email or Google account. No passwords required for maximum security and convenience."
                     }
                 ],
                 additional: [
                     {
-                        title: "Media Integration",
-                        description: "Share images, videos, and links to enrich discussions."
-                    }
+                        title: "Real-time Chat and Messaging in developpement",
+                        description: "Communicate with other users in real-time to plan and discuss activities. Coordinate schedules, share ideas, and stay connected."
+                      },
+                      {
+                        title: "Error Handling and Notifications",
+                        description: "MateFinder uses ShadeUI for frontend components, ensuring a sleek and user-friendly interface. Receive instant notifications for important updates and errors."
+                      },
+                      {
+                        title: "Prisma with PostgreSQL",
+                        description: "MateFinder utilizes Prisma with PostgreSQL for robust data management. Enjoy efficient queries, data validation, and seamless integration."
+                      }
                 ]
             },
-            summary: "With Thread+, we aimed to create a modern, user-friendly discussion platform tailored to the needs of current users. Whether for informal exchanges among friends or professional discussions, Thread+ provides a space where ideas can be expressed clearly and organizedly."
+            summary: "MateFinder is the go-to platform for connecting with people who share your interests and hobbies. Whether you're looking for a running buddy, a movie companion, or a hiking partner, MateFinder helps you discover new activities and meet new friends along the way."
         },
-        src: process.env.PUBLIC_URL + 'media/thread.png',
-        link: 'https://github.com/Explonentielle/Atelier-S41',
-        linkBis: 'https://www.uguest.fr/',
-        techno: ['React', 'Next Js', 'Prisma', 'Tailwind'],
-        id: 1,
+        src: process.env.PUBLIC_URL + 'media/Matefinder.png',
+        link: 'https://matefinder.vercel.app',
+        linkBis: 'https://github.com/Explonentielle/MateFinder',
+        techno: ['Next.js', 'Prisma', 'postgreSql', 'Tailwind', "posgreSQL", "Tanstack queries", "safe action"],
+        id: 1
     },
     {
         id: 2,

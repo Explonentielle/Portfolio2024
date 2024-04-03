@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaStar, FaChevronLeft } from "react-icons/fa";
-import ReferralSumary from "./ReferralSumary";
 
 
 
@@ -9,11 +8,6 @@ const Referral = () => {
     const [rating, setRating] = useState(0);
     const [name, setName] = useState("");
     const [showReferral, setShowReferral] = useState(false);
-
-    const comments = [
-        { id: 1, text: "Working with ALexandre has been a pleasure - their attention to detail and collaborative spirit truly shine. ALexandre brings great value to any project.", rating: 5, timestamp: "2024-02-28T10:30:00Z", name: "Malik - Uguest" },
-        { id: 1, text: "I highly recommend Alexandre for their outstanding professionalism and dedication!", rating: 5, timestamp: "2024-03-02T10:30:00Z", name: " ATelier S41" },
-      ];
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -35,15 +29,10 @@ const Referral = () => {
                 <p>add referral</p>
             </button>
 
-            <div className={`referral-content p-4 rounded-xl ${showReferral ? "show" : ""}`}>
+            <div className={`referral-content p-4 rounded-xl w-1/3 ${showReferral ? "show" : ""}`}>
                 <div className="md:flex md:justify-center  md:items-start">
-
-                    <div className="w-full md:w-1/2 px-4">
-                        <h3 className="text-2xl font-bold mb-2 text-white">Latest reviews</h3>
-                       <ReferralSumary comments={comments} background="bg-submi" />
-                    </div>
-
-                    <div className="w-full md:w-1/2 px-4 mt-8 md:mt-0">
+                    <div className="w-full px-4 mt-8 md:mt-0">
+                        <h3 className="text-2xl font-bold mb-2 text-white">Add a new referral</h3>
                         <form onSubmit={handleSubmit} className="flex flex-col space-y-4 mt-10">
                             <input
                                 type="text"
@@ -56,7 +45,7 @@ const Referral = () => {
                             <textarea
                                 value={comment}
                                 onChange={(e) => setComment(e.target.value)}
-                                placeholder="..."
+                                placeholder="Your Referral"
                                 rows={4}
                                 className="border border-gray-300 rounded-md p-2"
                                 required

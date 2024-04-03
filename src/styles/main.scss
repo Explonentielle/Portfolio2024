@@ -9,6 +9,7 @@
 @import "about";
 @import "projects";
 
+
 .fixed {
     position: fixed;
     width: 100vw;
@@ -144,7 +145,7 @@
 }
 
 .referral-content.show {
-    transform: translateX(0%);
+    transform: translateX(200%);
 }
 
 .space-y-4 > * {
