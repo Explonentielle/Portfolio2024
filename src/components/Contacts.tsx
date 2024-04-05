@@ -3,7 +3,7 @@
 import React from "react";
 import Referral from "./Referral";
 import { useHeaderContext } from '../Context';
-import { FaDownload, FaStar } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 import { TextGenerateEffect } from "./text-generate-effect";
 import ReferralSumary from "./ReferralSumary";
 
