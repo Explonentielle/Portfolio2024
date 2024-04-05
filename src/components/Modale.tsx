@@ -12,7 +12,7 @@ export default function Modal() {
         <div className="modalFixed w-full top-0 left-0 p-2">
             <div className="relative flex w-auto h-full flex-col bg-gray-800 rounded-lg bg-opacity-95">
                 <div className=" absolute top-10 right-10 p-2 rounded-lg">
-                    <Button className="px-4 py-2 bg-gray-400 bg-opacity-95 text-xl text-white font-bold rounded-lg" onClick={closeModal}>
+                    <Button variant="outline" onClick={closeModal}>
                         Close
                     </Button>
                 </div>
